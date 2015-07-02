@@ -21,6 +21,8 @@ func main() {
   
   n := negroni.New()
   n.Use(gonroni.AddNegroniHttpMetrics(gonrAgent))
+  
+  gonrAgent.Run()
   // ...
 }
 ```
